@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="responsive.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-custom">
+    <div class="container-fluid">
+      <a href="https://shaurya5145.github.io/sCoder" target="_blank"><img src="sCoder_img.png" alt=""
+          class="img-fluid brand_name" width="200px"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 mx-3">
+          <li class="nav-item">
+            <a class="nav-link active text-center" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-center" href="#weather">Weather</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <section class="banner">
+    <div class="container">
+      <div class="row">
+        <div class="column-sm-12">
+          <h1>Get to know weather anytime,anywhere!!</h1>
+          <p>Know weather of your location or of anywhere in the world!!</p>
+          <a href="#weather"><button class="btn btn-primary">Current Weather</button></a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="weather">
+    <div class="container">
+      <div class="row">
+        <div class="column-sm-4">
+          <form action="" class="needs-validation" novalidate>
+            <input type="text" placeholder="Enter a city" class="form-control" id="city_name">
+            <input type="button" value="Get Weather" onclick="getData()" class="btn btn-primary">
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="container weather_result" id="weather_result">
+      <div>
+        <p id="today_day"></p>
+        <p id="today_dt"></p>
+      </div>
+      <div>
+        <img src="" alt="" id="result_img">
+        <h1 id="result"></h1>
+        <p id="weather_type"></p>
+        <p id="humidity"></p>
+        <p id="wind"></p>
+        <p id="error"></p>
+      </div>
+    </div>
+  </section>
+  <i class="fa-solid fa-bars"></i>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+  <script src="index.js"></script>
+</body>
+
+</html>
